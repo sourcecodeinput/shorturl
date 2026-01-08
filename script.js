@@ -11,7 +11,7 @@ document.getElementById('shortenForm').addEventListener('submit', function(event
   }
 
   // サーバーレス関数にリクエストを送る
-  fetch('/api/shorten', {
+  fetch('shorten', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ url: urlInput })
@@ -37,3 +37,4 @@ document.getElementById('copyButton').addEventListener('click', function() {
     alert('Error copying text: ' + err);
   });
 });
+
