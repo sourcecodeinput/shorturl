@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filetransfer.lol shorter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="galley.png" alt="filetransfer.lol logo" id="logo" />
+    <p>Enter a URL to shorten it!</p>
+  </header>
+
+  <main>
+    <form id="shortenForm">
+      <label for="urlInput">Enter URL:</label>
+      <input type="url" id="urlInput" placeholder="https://example.com" required>
+      <button type="submit">Shorten URL</button>
+    </form>
+
+    <div id="shortenedUrl" style="display: none;">
+      <p>Your shortened URL is: <span id="resultUrl"></span></p>
+      <button id="copyButton">Copy URL</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 URL Shortener Service</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
